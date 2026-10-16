@@ -1,0 +1,23 @@
+# DeepSeek LLM Configuration (Unified Planner & Drafter)
+deepseek_api_key: ""
+deepseek_base_url: "https://api.deepseek.com/v1"
+deepseek_model: "deepseek-chat"
+
+# Voice Engine Configuration (Local Qwen-TTS via Gradio)
+qwen_tts_gradio_url: "http://127.0.0.1:7860/"
+ref_voice_audio_path: "config/reference_voice.wav"
+ref_voice_transcript_path: "config/reference_voice.txt"
+tts_fade_ms: 10
+tts_pause_seconds: 0.4
+target_lufs: -14.0
+
+# Asset Harvester Configuration
+pexels_api_key: ""
+pixabay_api_key: ""
+ai_image_provider: "pollinations"  # Options: "none", "pollinations", "comfyui"
+
+# Pipeline Paths & Defaults
+output_dir: "data/projects"
+cache_dir: "data/cache"
+default_fps: 30
+default_resolution: [1920, 1080]

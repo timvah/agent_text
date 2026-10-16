@@ -1,0 +1,20 @@
+# Core Configuration & Data Validation
+pydantic>=2.7.0
+pydantic-settings>=2.2.0
+pyyaml>=6.0.1
+
+# Text Normalization & Linguistic Processing
+num2words>=0.5.13
+
+# Cloud LLM & API Clients
+openai>=1.30.0
+requests>=2.31.0
+
+# Audio Processing & Normalization
+gradio-client>=1.0.0
+soundfile>=0.12.1
+numpy>=1.26.0
+pyloudnorm>=0.1.1
+
+# Testing & Quality Assurance
+pytest>=8.0.0
