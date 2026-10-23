@@ -316,29 +316,32 @@ narrative_video_pipeline/
   - Implement `src/config_loader.py` and `config/settings.yaml`.
   - Implement `src/text_normalizer.py` with full unit tests for dates, currencies, and acronyms.
 
-- [ ] **Phase 2: DeepSeek Macro-Planner & Chapter Drafter**
+- [x] **Phase 2: DeepSeek Macro-Planner & Chapter Drafter**
   - Implement `src/planner.py` using DeepSeek-V3 API with strict Pydantic JSON validation.
   - Implement `src/drafter.py` generating sentence arrays, visual queries, and camera motions.
   - Test end-to-end generation from prompt to validated `chapter_script.json`.
 
-- [ ] **Phase 3: Voice Engine & Mathematical Alignment**
+- [x] **Phase 3: Voice Engine & Mathematical Alignment**
   - Implement `src/voice_engine.py` connecting to Qwen-TTS Gradio endpoint with edge cosine fades.
   - Add EBU R128 loudness normalization and duration metadata recording.
   - Implement `src/aligner.py` with zero-drift mathematical timestamping and `.srt` exporter.
 
-- [ ] **Phase 4: Multi-Source Asset Harvester**
+- [x] **Phase 4: Multi-Source Asset Harvester**
   - Implement `src/asset_harvester.py` with Pexels, Pixabay, Wikimedia, and AI image fallback.
   - Add asset hash-caching and rate-limit retry logic.
   - Implement aspect ratio padding/cropping utility for non-16:9 images.
 
-- [ ] **Phase 5: FFmpeg Video Engine with Ken Burns & Audio Ducking**
+- [x] **Phase 5: FFmpeg Video Engine with Ken Burns & Audio Ducking**
   - Implement `src/video_engine.py` with 4 distinct Ken Burns camera motions.
   - Implement BGM mixing with sidechain audio ducking.
   - Implement chapter assembly and final lossless concat demuxer.
 
-- [ ] **Phase 6: CLI Runner & End-to-End Dry Run**
+- [x] **Phase 6: CLI Runner & End-to-End Dry Run**
   - Build `src/pipeline.py` with granular `--resume-from` checkpoint flags.
   - Conduct full 1-chapter test run and inspect final rendered MP4.
+
+
+
 
 ---
 
